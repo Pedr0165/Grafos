@@ -8,9 +8,9 @@ typedef struct {
 //Função para criar grafos
 Grafo*criarGrafo(int vertices) {
   Grafo*g =(Grafo*)malloc(sizeof(Grafo));
-if(g==NULL)
-  Printf("Erro de memória")
-    break
+if(g==NULL){
+  printf("Erro de memória");
+  exit(1);
   }
 g->numVertices=vertices;
 //inicializar a matriz com 0
